@@ -1,0 +1,12 @@
+[project]
+name = "donusum_dagilimlari_bulma" 
+version = "0.1.0"
+authors = [{ name="Sadiye Agirman" }]
+description = "Olasılık dağılımlarında dönüşüm teknikleri (df, oyf, mcf)"
+readme = "README.md"
+dependencies = [
+    "sympy>=1.12" 
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

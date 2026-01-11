@@ -1,0 +1,23 @@
+
+import sympy as sp
+from donusum_dagilimlari_bulma import teknik_df, teknik_oyf, teknik_mcf
+
+# X ~ U(0,1) ve Y = 1 - X dönüşümü
+x = sp.symbols('x')
+f_x = 1          
+g_x = 1 - x      
+F_x = x          
+
+print("--- ÇÖZÜM SONUÇLARI ---")
+
+# Dağılım Fonksiyonu Tekniği
+sonuc_df = teknik_df(g_x, F_x=F_x, alt=0, ust=1)
+print(f"F_Y(y): {sonuc_df}")
+
+# Olasılık Yoğunluk Fonksiyonu Tekniği
+sonuc_oyf = teknik_oyf(g_x, f_x=f_x, alt=0, ust=1)
+print(f"f_Y(y): {sonuc_oyf}")
+
+# Moment Çıkaran Fonksiyon Tekniği
+sonuc_mcf = teknik_mcf(g_x, f_x=f_x, alt=0, ust=1)
+print(f"M_Y(t): {sonuc_mcf}")
