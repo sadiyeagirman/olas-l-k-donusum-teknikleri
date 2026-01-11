@@ -13,3 +13,4 @@ Olasılık derslerinde elle çözmesi bazen oldukça vakit alan;
 3. **Moment Çıkaran Fonksiyon (m.ç.f.) Tekniği**
 
 gibi yöntemleri Python2a taşıyarak, sembolik hesaplamalarla (SymPy kütüphanesi desteğiyle) sonuçlandırmayı amaçlıyorum 
+
